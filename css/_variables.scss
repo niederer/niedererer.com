@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,400);
+@import url(http://fonts.googleapis.com/css?family=Ovo);
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        #e6e6e6 !default;
+$backgroundImage:       url('../images/swirley.png') repeat;
+$headerBackground:      url('../images/headerbg.png') repeat;
+$textColor:             #333 !default;
+
+// Typography
+// -------------------------
+$sansFontFamily:        "Yanone Kaffeesatz", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       "Ovo", Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$footerFontFamily:      Helvetica, Arial, sans-serif !default;
+
+$baseFontSize:          1em !default;
+$baseFontFamily:        $serifFontFamily !default;
+$baseLineHeight:        1.5em !default;
+$altFontFamily:         $sansFontFamily !default;
+
+$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsColor:         inherit !default; // empty to use BS default, $textColor
+
+// Color Palette
+// -------------------------
+$blue:                  #1188bd !default;
+$brown:                 #352302;
+$cream:                 #e4d8b9;
+$lightBrown:            #b49a7d;
+$teal:                  #1bb3b1;
+$darkTaupe:             #666257;
+
+// Links
+// -------------------------
+$linkColor:             $teal !default;
+$linkColorHover:        darken($linkColor, 10%) !default;

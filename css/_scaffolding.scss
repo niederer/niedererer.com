@@ -1,0 +1,59 @@
+html {
+  font-size: 100%;
+  body {
+    font-size: 1em;
+    line-height: 1.5em;
+    header {
+      font-size: 1em;
+    }
+    .intro, .main {
+      font-size: 0.9em;
+      line-height: 1.5em;
+    }
+    .footer {
+      font-size: 0.8em;
+      line-height: 1.5em;
+    }
+  }
+}
+
+div[class*="slide"] {
+  padding: 20px 0;
+}
+@media screen and (min-width: 900px) {
+  div[class*="slide"] {
+    padding: 0 0 20px 0;
+  }
+}
+
+// Body reset
+// -------------------------
+
+body {
+  background-color: $bodyBackground;
+  color: $textColor;
+  font-family: $baseFontFamily;
+  line-height: $baseLineHeight;
+}
+
+// Hide/Show
+// -------------------------
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: $linkColorHover;
+  text-decoration: underline;
+}

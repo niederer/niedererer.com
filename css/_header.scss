@@ -1,0 +1,55 @@
+// navigation
+header.header {
+  background: $headerBackground;
+  font-family: $sansFontFamily;
+  color: $cream;
+  font-size: 1.7em;
+  font-weight: 300;
+  a {
+    color: $cream;
+    margin: 0 5px;
+    text-transform: uppercase;
+    &:hover {
+      color: $teal;
+      text-decoration: none;
+    }
+  }
+}
+.brand {
+  display: block;
+  position: relative;
+}
+.logo {
+  display: none;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  width: 2.5em;
+}
+.url {
+  display: none;
+  padding: 20px 0 10px 110px;
+}
+.navigation {
+  float: right;
+  padding: 10px 0;
+  text-align: right;
+}
+
+// header media query fun
+@media screen and (min-width: 670px) {
+  .logo {
+    width: auto;
+  }
+  .logo, .url {
+    display: inline;
+  }
+  .header .grid-12 {
+    position: relative;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+}

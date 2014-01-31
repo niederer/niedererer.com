@@ -1,0 +1,89 @@
+@import "header";
+
+// intro (cream) section
+section.intro {
+  background: $backgroundImage;
+  border-bottom: 10px solid desaturate(darken($cream, 4), 7);
+  color: $brown;
+  text-shadow: 1px 1px 1px #FFF;
+  h1 {
+    margin: 30px 0;
+  }
+  .row {
+    position: relative;
+  }
+  .btn {
+    background: $darkTaupe;
+    &:hover {
+      background: $blue;
+    }
+  }
+  img {
+    display: none;
+  }
+  img.profile {
+    width: 16%;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+  }
+  h3 {
+    margin: 10px 0;
+  }
+  h3:first-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section.intro img {
+    display: inline;
+  }
+}
+
+// work (grey) section
+section.main {
+  img {
+    border: 0;
+    width: 100%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  .slide2-inner .grid-6 {
+    margin-bottom: 30px;
+  }
+  .grid-6 a {
+    display: block;
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+  .grid-6 a:first-of-type {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  span {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+}
+
+
+// footer
+section.footer {
+  background-color: $blue;
+  color: #FFF;
+  font-family: $footerFontFamily;
+  font-weight: 100;
+  a {
+    color: #FFF;
+    font-weight: 600;
+  }
+  form {
+    font-size: 1.3em;
+  }
+  .btn:hover {
+    background-color: $teal;
+  }
+}

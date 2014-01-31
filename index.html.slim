@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title Carissa Niederer | niedererer.com
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+    meta name="author" content="Carissa Niederer"
+    meta name="description" content="Portfolio of Carissa Niederer, front-end designer and developer based in Chicago, IL"
+    link href="css/style.css" rel="stylesheet"
+
+  body
+    header.header
+      .container
+        .row
+          .grid-12
+            a.brand
+              img.logo src="images/hoosky.png" alt="logo"
+            img.url src="images/url.png" alt="niedererer.com"
+            / Navigation commented out for now
+            / .navigation
+            /   a href="#top" About
+            /   a href="#work" Work
+            /   a href="#contact" Contact
+    section.intro
+      .container
+        .row.slide1
+          .grid-12.centered
+            h1 Hi, I'm Carissa Niederer.
+            img src="images/divider.png" alt=""
+            h3 I'm a front end designer and developer based out of Chicago.
+            h3 I'm talented at clean design that comes to you in clean code.
+            / h4
+              / | (The extra er is just along for the ride. My friends are talented at nicknames that stick.)
+            / button.btn.toggle-forward.centered More on Carissa &raquo;
+        .row.slide2.hide
+          .grid-9.centered.slide2-inner
+            .row
+              .grid-2
+                img src="images/profile.png"
+              .grid-9
+                h2.centered About
+                p As you already know, I'm Carissa Niederer and I'm a front end developer in Chicago. I've just completed my degree in Interactive Media, and therefore I hold a firm understanding of what user-centered design really means: design that is successful the first time, no holds barred. I also hold significant experience in front end development, so not only can I make designs that are simple and beautiful, I can make them work.
+                / TODO: fix this copy because you wrote it a year ago
+                / think about adding skills / "experience with": HTML > HAML/SLIM, CSS > SASS/SCSS, etc
+                button.btn.toggle-backward.centered &laquo; Back
+    section.main
+      .container
+        / .row.slide1
+          / .grid-12.centered
+          /   h2 Newest Work.
+          /   p Here's what I've been up to lately--great for a quick look at what I do.
+          /   .grid-9.centered
+          /     .row
+          /       .grid-6
+          /         img src="http://placekitten.com/g/300/300"
+          /       .grid-6
+          /         img src="http://lorempixel.com/g/300/300/cats/"
+          /   button.btn.centered.toggle-forward Full portfolio &raquo;
+        .row.slide2
+          .grid-12.centered.slide2-inner
+            h2 Featured Work
+            / p Biting claw sleep on your face attack hiss, run sleep on your keyboard run rip the couch tail.
+            .grid-9.centered
+              .row
+                .grid-6.thumbnail
+                  a href="#"
+                    img src="images/thumbs/results.png"
+                  a href="results.html" id="results" Results
+                  span branding, strategy, responsive UI, UX, HTML, CSS
+                .grid-6.thumbnail
+                  a href="#"
+                    img src="images/thumbs/recstache.png"
+                  a href="#" id="recstache" Recstache
+                  span branding, responsive UI, UX, HTML, CSS
+              .row
+                .grid-6
+                  a href="#"
+                    img src="images/thumbs/coursetime.png"
+                  a href="#" id="coursetime" courseti.me
+                  span branding, UI, UX, HTML, CSS
+                .grid-6
+                  a href="#"
+                    img src="images/thumbs/solaras-new.png"
+                  a href="#" id="solaras" Solaras
+                  span branding
+            / button.btn.centered.toggle-backward &laquo; Back
+            / TODO: don't forget to add recstache, results - branding & design
+            / think about adding a dark overlay w/white text for quick details - responsive, branding, etc
+            / maybe divide them into separate categories OR just make it very clear what each one is re: ordering/grouping
+    section.footer
+      .container
+        .row
+          .grid-6
+            p Moral of the story here is that I'm passionate about innovative designs and the code behind them -- so let's talk about it! You can email me here or use the form to your right.
+
+            p
+              ' &copy; Carissa Niederer
+              script type="text/javascript" document.write(new Date().getFullYear() + ". ");
+              | All rights reserved.
+
+          .grid-6
+            fieldset
+              form
+                input type="text" placeholder="Name"
+                input type="email" placeholder="Email address"
+                textarea rows="6" cols="15" placeholder="Message"
+                input type="submit" class="btn" value="Send Message"
+
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    script type="text/javascript" src="js/home.js"

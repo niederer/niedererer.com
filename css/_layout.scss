@@ -53,13 +53,13 @@ section.main {
   .slide2-inner .grid-6 {
     margin-bottom: 30px;
   }
-  .grid-6 a {
+  .grid-6 strong {
     display: block;
     font-weight: bold;
     font-size: 1.6em;
     line-height: 1.6em;
   }
-  .grid-6 a:first-of-type {
+  .grid-6 strong:first-of-type {
     font-size: 1.5em;
     line-height: 1.5em;
   }
@@ -85,5 +85,8 @@ section.footer {
   }
   .btn:hover {
     background-color: $teal;
+  }
+  span {
+    margin: 0 10px;
   }
 }

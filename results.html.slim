@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title Carissa Niederer | niedererer.com
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+    meta name="author" content="Carissa Niederer"
+    meta name="description" content="Portfolio of Carissa Niederer, front-end designer and developer based in Chicago, IL"
+    link href="css/style.css" rel="stylesheet"
+    javascript:
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47663705-1', 'niedererer.com');
+      ga('send', 'pageview');
+
+  body
+    header.header
+      .container
+        .row
+          .grid-12
+            .brand
+              img.logo src="images/hoosky.png" alt="logo"
+            img.url src="images/url.png" alt="niedererer.com"
+            / Navigation commented out for now
+            / .navigation
+            /   a href="#top" About
+            /   a href="#work" Work
+            /   a href="#contact" Contact
+    section.main
+      .container
+        .row
+          .grid-12.centered
+            h2 Results
+        .row
+          .grid-3
+            img src="images/thumbs/results.png"
+          .grid-9
+            h3.centered The problem
+            p Lorem ipsum sit dolor amet, ipsum sit dolor amet
+            / think about adding a dark overlay w/white text for quick details - responsive, branding, etc
+            / maybe divide them into separate categories OR just make it very clear what each one is re: ordering/grouping
+    section.footer
+      .container
+        .row
+          .grid-9.centered
+            p
+              ' &copy; Carissa Niederer
+              script type="text/javascript" document.write(new Date().getFullYear());
+              span &middot;
+              a href="mailto:cniederer+folio@gmail.com" Email
+              span &middot;
+              a href="https://github.com/niederer/" Github
+
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    script type="text/javascript" src="js/home.js"

@@ -4,8 +4,8 @@ $grid-columns:          12;
 $grid-column-padding:   15px;
 // Point at which the floats kick in and horizontally align columns
 $grid-float-breakpoint: 600px;
-// Gutters for the left and right outer edges
-$outerGutters:          20px;
+// max-width for the layout so it doesn't get out of control on large screens
+$container-max: 1500px;
 
 // mixins for grid
 @mixin box-sizing($box-model) {
@@ -26,8 +26,6 @@ $outerGutters:          20px;
 }
 
 @mixin make-row {
-  margin-left: -$grid-column-padding;
-  margin-right: -$grid-column-padding;
   @include clearfix;
 }
 
@@ -64,69 +62,18 @@ $outerGutters:          20px;
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-right: $outerGutters;
-  padding-left: $outerGutters;
+  max-width: $container-max;
   @include clearfix;
-}
-
-// escapes sections out of containers for flexible background usage
-@mixin escape-container($outerGutters) {
-  margin-left: -$outerGutters;
-  margin-right: -$outerGutters;
-  padding-left: $outerGutters;
-  padding-right: $outerGutters;
 }
 
 .row {
   @include make-row;
 }
 
-.grid-12 {
-  @include make-column(12);
-}
-
-.grid-11 {
-  @include make-column(11);
-}
-
-.grid-10 {
-  @include make-column(10);
-}
-
-.grid-9 {
-  @include make-column(9);
-}
-
-.grid-8 {
-  @include make-column(8);
-}
-
-.grid-7 {
-  @include make-column(7);
-}
-
-.grid-6 {
-  @include make-column(6);
-}
-
-.grid-5 {
-  @include make-column(5);
-}
-
-.grid-4 {
-  @include make-column(4);
-}
-
-.grid-3 {
-  @include make-column(3);
-}
-
-.grid-2 {
-  @include make-column(2);
-}
-
-.grid-1 {
-  @include make-column(1);
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    @include make-column($i);
+  }
 }
 
 .centered {

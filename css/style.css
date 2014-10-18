@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,400);
-@import url(http://fonts.googleapis.com/css?family=Ovo);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -7,6 +5,8 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,400);
+@import url(http://fonts.googleapis.com/css?family=Ovo);
 article,
 aside,
 details,
@@ -335,24 +335,20 @@ table {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px; }
+  max-width: 1500px; }
   .container:before, .container:after {
     content: "";
     display: table; }
   .container:after {
     clear: both; }
 
-.row {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .row:before, .row:after {
-    content: "";
-    display: table; }
-  .row:after {
-    clear: both; }
+.row:before, .row:after {
+  content: "";
+  display: table; }
+.row:after {
+  clear: both; }
 
-.grid-12 {
+.grid-1 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -360,117 +356,9 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (min-width: 600px) {
-    .grid-12 {
+    .grid-1 {
       float: left;
-      width: 100%; } }
-
-.grid-11 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-11 {
-      float: left;
-      width: 91.66667%; } }
-
-.grid-10 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-10 {
-      float: left;
-      width: 83.33333%; } }
-
-.grid-9 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-9 {
-      float: left;
-      width: 75%; } }
-
-.grid-8 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-8 {
-      float: left;
-      width: 66.66667%; } }
-
-.grid-7 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-7 {
-      float: left;
-      width: 58.33333%; } }
-
-.grid-6 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-6 {
-      float: left;
-      width: 50%; } }
-
-.grid-5 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-5 {
-      float: left;
-      width: 41.66667%; } }
-
-.grid-4 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-4 {
-      float: left;
-      width: 33.33333%; } }
-
-.grid-3 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 600px) {
-    .grid-3 {
-      float: left;
-      width: 25%; } }
+      width: 8.33333%; } }
 
 .grid-2 {
   min-height: 1px;
@@ -484,7 +372,7 @@ table {
       float: left;
       width: 16.66667%; } }
 
-.grid-1 {
+.grid-3 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -492,9 +380,117 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (min-width: 600px) {
-    .grid-1 {
+    .grid-3 {
       float: left;
-      width: 8.33333%; } }
+      width: 25%; } }
+
+.grid-4 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-4 {
+      float: left;
+      width: 33.33333%; } }
+
+.grid-5 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-5 {
+      float: left;
+      width: 41.66667%; } }
+
+.grid-6 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-6 {
+      float: left;
+      width: 50%; } }
+
+.grid-7 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-7 {
+      float: left;
+      width: 58.33333%; } }
+
+.grid-8 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-8 {
+      float: left;
+      width: 66.66667%; } }
+
+.grid-9 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-9 {
+      float: left;
+      width: 75%; } }
+
+.grid-10 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-10 {
+      float: left;
+      width: 83.33333%; } }
+
+.grid-11 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-11 {
+      float: left;
+      width: 91.66667%; } }
+
+.grid-12 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .grid-12 {
+      float: left;
+      width: 100%; } }
 
 .centered {
   display: block;

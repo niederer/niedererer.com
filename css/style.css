@@ -649,14 +649,13 @@ section.main .btn {
   margin-top: 20px; }
 section.main .slide2-inner .grid-6 {
   margin-bottom: 30px; }
-section.main .grid-6 strong {
+section.main strong,
+section.main a {
   display: block;
   font-weight: bold;
   font-size: 1.6em;
-  line-height: 1.6em; }
-section.main .grid-6 strong:first-of-type {
-  font-size: 1.5em;
-  line-height: 1.5em; }
+  line-height: 1.1em;
+  margin-bottom: 5px; }
 section.main span {
   font-size: 1.1em;
   line-height: 1.6em; }
